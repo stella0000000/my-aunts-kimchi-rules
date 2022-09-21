@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta property="og:title" content="My Aunt's Kimchi Rules" />
+        <meta property="og:image" content="./images/kimchipage.png" />
+        <meta property="og:description" content="An ode to my aunt, and her kimchi to save humanity from poorly fermented cabbage." />
+        <meta property="og:url" content="www.myauntskimchirules.com" />
+
+        <title>My Aunt's Kimchi Rules</title>
+
+        <link rel="stylesheet" href="css/main.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/addons/p5.sound.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/addons/p5.dom.min.js" ></script>
+        <script type="text/javascript" src="js/sketch.js"></script>
+    </head>
+
+    <body style="background-color: #ffe0f6;">
+        <audio id="kimchiCrunch" autoplay preload="auto">
+            <source src="asmr.mp3"></source>
+        </audio>
+
+        <script type="text/javascript">
+            $(document).ready(function(){
+                var audio = $("#kimchiCrunch")[0];
+                $("#crunch a")
+                    .mouseenter(function() {
+                        audio.play();});
+            });
+        </script>
+
+        <div id="crunch" class="kimchiMenu">
+            <i><a href="index.html">About</a></i><br>
+            <a href="recipe.html">♡ My Aunt's Kimchi Recipe ♡</a></li>
+            <a href="midnight-snacks.html" style="color: #ff00a6; font-size: 25px; text-shadow: 5px 5px 5px #ff00a6;">Midnight Snacks</a>
+        </div>
+
+        <div id="crunch" class="about">
+            <br><br>
+            Dear reader,<br><br>
+            Essentially, <kimchi></kimchi> is a staple Korean side dish that's present at almost every meal. It's fermented napa cabbage—or cucumber, mustard leaf, scallion, chive, radish... <span class="gradient">Some are spicier than others.</span> Usually, certain types are reserved for certain seasons, or dishes. The ingredients can also hint at which region a family is from in Korea. For more, please visit <a href="http://www.kimjangkimchi.xyz"  target="_blank"><u>Seung-a's website</u></a>!<br><br>
+            <sohnmat></sohnmat>, which literally translates to <i>hand taste</i>, is a magical je ne sais quois deeply embedded in Korean cooking. It's the unique touch (✿◔‿◔)ɔ･ﾟ✧♥ someone brings to their cooking that makes you feel right at home.<br><br>
+            I returned stateside in 2020 having survived two dark Stockholm winters—as in 15:00 sunsets. You can find "kimchi" on many menus there. Some taste good, but, uh, some don't. I wondered why. Since being back home, I remembered that my aunt's <kimchi></kimchi> is the best in the world. I wanted to learn her recipe, and make a website to shed light on <sohnmat></sohnmat> to save humanity from poorly fermented cabbage and homesickness!
+            <br><br>
+            Love,<br>
+            <i>Stella</i>
+        </div>
+
+        <div id="crunch" class="about" style="border: 1px solid #000;
+                                              box-shadow: 5px 5px #000;
+                                              padding: 10px;">
+            PS:  The consonants of the Korean alphabet were visually designed to mimic the positions of your mouth, teeth, and tongue when pronounced. Originally the language was named "Correct sounds to enlighten the people", visually the "Instruction of the People". King Sejong, who invented it, wrote, "I...have created 28 letters. It is my desire that all the people may easily learn them and use them daily." <a href="https://medium.com/@minzikang/design-lessons-from-the-korean-alphabet-383191ee7d4d" target="_blank" style="font-size:18px;"><u>more</u></a> ٩(^‿^)۶
+        </div><br>
+    </body>
+</html>

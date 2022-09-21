@@ -1,0 +1,203 @@
+@font-face {
+    font-family: "Korean Looks";
+    src: url("koreanlooks.ttf"); /* IE9 Compat Modes */
+    src: url("koreanlooks.ttf2") format("ttf2"),
+      url("koreanlooks.ttf") format("ttf2"),
+      url("koreanlooks.ttf") format("truetype"); /* Safari, Android, iOS */
+  }
+  
+  @font-face {
+    font-family: "Favorit";
+    src: url("http://db.onlinewebfonts.com/t/d73d37902ec72250867b578d3763ee38.eot"); /* IE9*/
+    src: url("http://db.onlinewebfonts.com/t/d73d37902ec72250867b578d3763ee38.eot?#iefix")
+        format("embedded-opentype"),
+      /* IE6-IE8 */
+        url("http://db.onlinewebfonts.com/t/d73d37902ec72250867b578d3763ee38.woff2")
+        format("woff2"),
+      /* chrome firefox */
+        url("http://db.onlinewebfonts.com/t/d73d37902ec72250867b578d3763ee38.woff")
+        format("woff"),
+      /* chrome firefox */
+        url("http://db.onlinewebfonts.com/t/d73d37902ec72250867b578d3763ee38.ttf")
+        format("truetype"),
+      /* chrome firefox opera Safari, Android, iOS 4.2+*/
+        url("http://db.onlinewebfonts.com/t/d73d37902ec72250867b578d3763ee38.svg#Favorit")
+        format("svg"); /* iOS 4.1- */
+  }
+  
+  body {
+    font-family: "Favorit";
+    margin: 10px;
+  }
+  
+  :root {
+    cursor: url(//s3-us-west-2.amazonaws.com/s.cdpn.io/3174/cursor.png), auto;
+  }
+  
+  .flex-container {
+    display: flex;
+  }
+  
+  .flex-container > div {
+    margin-bottom: 1em;
+    margin-right: 5em;
+  }
+  
+  .recipe {
+    font-size: 17px;
+    line-height: 25px;
+    margin-bottom: 3em;
+    margin-right: 50px;
+    margin-left: 500px;
+  }
+  
+  .step {
+    padding-top: 4.7em;
+    font-size: 22px;
+    border-bottom: 1px solid #000;
+    font-style: italic;
+    font-size: 20px;
+  }
+  
+  .about {
+    font-size: 25px;
+    line-height: 40px;
+    margin-bottom: 3em;
+    margin-right: 150px;
+    margin-left: 150px;
+  }
+  
+  .hover-title {
+    display: inline;
+    pointer-events: auto;
+    cursor: pointer;
+    background-size: 50;
+    border: 1px solid #000;
+    padding: 3px;
+    cursor: help;
+  }
+  
+  .hover-image {
+    visibility: hidden;
+  }
+  
+  body:not(.mobile) .hover-title:hover + .hover-image {
+    visibility: visible;
+    pointer-events: none;
+  }
+  
+  .hover-image {
+    display: flex;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    pointer-events: none;
+    flex-direction: column;
+    align-items: center;
+  
+    width: 90vw;
+    height: 90vh;
+  }
+  
+  .hover-image img {
+    max-width: 100% !important;
+    max-height: 100% !important;
+    width: auto !important;
+    height: auto !important;
+    margin-bottom: 0;
+  }
+  
+  @keyframes float {
+    0% {
+      transform: translatey(0px);
+    }
+    50% {
+      transform: translatey(-15px);
+    }
+    100% {
+      transform: translatey(0px);
+    }
+  }
+  
+  p {
+    font-size: 20px;
+  }
+  
+  a {
+    font-size: 25px;
+    color: #000000;
+    text-decoration: none;
+    /*font-family: "Zine";*/
+  }
+  
+  a:hover {
+    font-style: italic;
+    cursor: url(//s3-us-west-2.amazonaws.com/s.cdpn.io/3174/cursor.png), auto;
+  }
+  
+  .kimchiMenu {
+    overflow: hidden;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    width: 95vw;
+  }
+  
+  .recipeMenu {
+    overflow: hidden;
+    position: fixed;
+    list-style: none;
+  }
+  
+  kimchi {
+    background-size: 50;
+    padding: 17px;
+    display: inline-block;
+    width: 70px;
+    text-align: center;
+    background-image: url("../images/chopsticks.png");
+    background-size: 75px 75px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  kimchi:after {
+    content: "김치";
+    background-size: 50;
+    color: #000;
+    font-size: 20px;
+  }
+  kimchi:hover:after {
+    content: "kimchi";
+    background-size: 50;
+  }
+  
+  sohnmat {
+    background-size: 50;
+    padding: 17px;
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    background-image: url("../images/heart.png");
+    background-size: 75px 75px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  sohnmat:after {
+    content: "손맛";
+    background-size: 50px;
+    color: #000;
+    font-size: 20px;
+  }
+  sohnmat:hover:after {
+    content: "sohn mat";
+    background-size: 50px;
+  }
+
+  @media only screen and (max-width: 700px) {
+    #about {
+      width: 100vw;
+      margin: 2em;
+    }
+  }
