@@ -28,6 +28,7 @@
   body {
     font-family: "Favorit";
     margin: 10px;
+    font-size: 25px;
   }
   
   :root {
@@ -39,32 +40,21 @@
   }
   
   .flex-container > div {
-    margin-bottom: 1em;
-    margin-right: 5em;
+    margin: 0px 0px 0.5em 1em;
   }
   
   .recipe {
-    font-size: 17px;
-    line-height: 25px;
-    margin-bottom: 3em;
-    margin-right: 50px;
-    margin-left: 500px;
+    margin: 0px 50px 2em 500px;
   }
   
   .step {
     padding-top: 4.7em;
-    font-size: 22px;
     border-bottom: 1px solid #000;
-    font-style: italic;
-    font-size: 20px;
   }
   
   .about {
-    font-size: 25px;
     line-height: 40px;
-    margin-bottom: 3em;
-    margin-right: 150px;
-    margin-left: 150px;
+    margin: 0px 150px 3em 150px;
   }
   
   .hover-title {
@@ -73,7 +63,7 @@
     cursor: pointer;
     background-size: 50;
     border: 1px solid #000;
-    padding: 3px;
+    padding: 2px;
     cursor: help;
   }
   
@@ -109,27 +99,9 @@
     margin-bottom: 0;
   }
   
-  @keyframes float {
-    0% {
-      transform: translatey(0px);
-    }
-    50% {
-      transform: translatey(-15px);
-    }
-    100% {
-      transform: translatey(0px);
-    }
-  }
-  
-  p {
-    font-size: 20px;
-  }
-  
   a {
-    font-size: 25px;
     color: #000000;
     text-decoration: none;
-    /*font-family: "Zine";*/
   }
   
   a:hover {
@@ -138,17 +110,17 @@
   }
   
   .kimchiMenu {
-    overflow: hidden;
     position: fixed;
     display: flex;
     justify-content: space-between;
-    width: 95vw;
+    width: 98vw;
   }
   
   .recipeMenu {
     overflow: hidden;
     position: fixed;
     list-style: none;
+    margin-top: 100px;
   }
   
   kimchi {
@@ -165,16 +137,12 @@
   kimchi:after {
     content: "김치";
     background-size: 50;
-    color: #000;
-    font-size: 20px;
   }
   kimchi:hover:after {
     content: "kimchi";
-    background-size: 50;
   }
   
   sohnmat {
-    background-size: 50;
     padding: 17px;
     display: inline-block;
     width: 100px;
@@ -186,18 +154,25 @@
   }
   sohnmat:after {
     content: "손맛";
-    background-size: 50px;
-    color: #000;
-    font-size: 20px;
+    font-size: 23px;
   }
   sohnmat:hover:after {
     content: "sohn mat";
-    background-size: 50px;
+  }
+
+  #closed-message {
+    color: #CDCDCD;
+    padding-top: 100px;
+  }
+
+  #open-message {
+    color: #CDCDCD;
+    padding-top: 100px;
   }
 
   @media only screen and (max-width: 700px) {
-    #about {
-      width: 100vw;
-      margin: 2em;
+    .about {
+      width: 100%;
+      margin: 0px;
     }
   }
