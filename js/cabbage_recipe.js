@@ -4,13 +4,12 @@ var changeDirection;
 var timestamp = 0;
 var index = 0;
 var quotes = ['Hey, I\'m Cabbagette! You can call me Cabby.',
-              'You can hover over dashed ingredients to see what they look like!',
+              'You can hover over outlined ingredients to see what they look like!',
               'Ask not what your cabbage can do for you, but what you can do for your cabbage.',
-              'Radish dries quickly once its cut.',
-              'If you want it X-ier, add more X.',
-              'Not too much, not too little... just the right amount.',
+              'Yo, radish dries quickly once its cut.',
+              'If you want it X-ier, add more... X!',
+              'Lagom [ˈlɑ̂ːɡɔm] Swedish: not too much, not too little. Just the right amount.',
               'Will you do anything differently next time?',
-              'What was the most difficult part?',
               'If storing in a flat container, place cabbages in an alternating pattern face up.',
               'Visit "Midnight Snacks" for meal ideas with your sour batches.']
 

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
+
 @font-face {
     font-family: "Korean Looks";
     src: url("koreanlooks.ttf"); /* IE9 Compat Modes */
@@ -5,30 +7,31 @@
       url("koreanlooks.ttf") format("ttf2"),
       url("koreanlooks.ttf") format("truetype"); /* Safari, Android, iOS */
   }
-  
-  @font-face {
-    font-family: "Favorit";
-    src: url("http://db.onlinewebfonts.com/t/d73d37902ec72250867b578d3763ee38.eot"); /* IE9*/
-    src: url("http://db.onlinewebfonts.com/t/d73d37902ec72250867b578d3763ee38.eot?#iefix")
-        format("embedded-opentype"),
-      /* IE6-IE8 */
-        url("http://db.onlinewebfonts.com/t/d73d37902ec72250867b578d3763ee38.woff2")
-        format("woff2"),
-      /* chrome firefox */
-        url("http://db.onlinewebfonts.com/t/d73d37902ec72250867b578d3763ee38.woff")
-        format("woff"),
-      /* chrome firefox */
-        url("http://db.onlinewebfonts.com/t/d73d37902ec72250867b578d3763ee38.ttf")
-        format("truetype"),
-      /* chrome firefox opera Safari, Android, iOS 4.2+*/
-        url("http://db.onlinewebfonts.com/t/d73d37902ec72250867b578d3763ee38.svg#Favorit")
-        format("svg"); /* iOS 4.1- */
-  }
-  
+
+@font-face {
+  font-family: "Favorit";
+  src: url("http://db.onlinewebfonts.com/t/d73d37902ec72250867b578d3763ee38.eot"); /* IE9*/
+  src: url("http://db.onlinewebfonts.com/t/d73d37902ec72250867b578d3763ee38.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */
+      url("http://db.onlinewebfonts.com/t/d73d37902ec72250867b578d3763ee38.woff2")
+      format("woff2"),
+    /* chrome firefox */
+      url("http://db.onlinewebfonts.com/t/d73d37902ec72250867b578d3763ee38.woff")
+      format("woff"),
+    /* chrome firefox */
+      url("http://db.onlinewebfonts.com/t/d73d37902ec72250867b578d3763ee38.ttf")
+      format("truetype"),
+    /* chrome firefox opera Safari, Android, iOS 4.2+*/
+      url("http://db.onlinewebfonts.com/t/d73d37902ec72250867b578d3763ee38.svg#Favorit")
+      format("svg"); /* iOS 4.1- */
+}
+
   body {
-    font-family: "Favorit";
+    font-family: 'Favorit', sans-serif;
     margin: 10px;
-    font-size: 25px;
+    line-height: 40px;
+    font-size: 30px;
   }
   
   :root {
@@ -53,8 +56,9 @@
   }
   
   .about {
-    line-height: 40px;
+    /* line-height: 40px; */
     margin: 0px 150px 3em 150px;
+    text-align: justify;
   }
   
   .hover-title {
@@ -102,6 +106,8 @@
   a {
     color: #000000;
     text-decoration: none;
+    /* font-family: 'Cutive Mono', monospace; */
+    font-weight: bold;
   }
   
   a:hover {
@@ -122,11 +128,17 @@
     list-style: none;
     margin-top: 100px;
   }
+
+  .gradient {
+    background: #CF0000;
+    background: linear-gradient(to right, #CF0000 0%, #ACCF00 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
   
   kimchi {
     background-size: 50;
-    padding: 17px;
-    display: inline-block;
+    padding: 20px;
     width: 70px;
     text-align: center;
     background-image: url("../images/chopsticks.png");
@@ -143,8 +155,7 @@
   }
   
   sohnmat {
-    padding: 17px;
-    display: inline-block;
+    padding: 22px;
     width: 100px;
     text-align: center;
     background-image: url("../images/heart.png");
@@ -154,10 +165,10 @@
   }
   sohnmat:after {
     content: "손맛";
-    font-size: 23px;
   }
   sohnmat:hover:after {
     content: "sohn mat";
+    /* font-size: 20px; */
   }
 
   #closed-message {
