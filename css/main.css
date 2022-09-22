@@ -2,37 +2,33 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,700&display=swap');
 
 @font-face {
-    font-family: "Korean Looks";
-    src: url("koreanlooks.ttf"); /* IE9 Compat Modes */
-    src: url("koreanlooks.ttf2") format("ttf2"),
-      url("koreanlooks.ttf") format("ttf2"),
-      url("koreanlooks.ttf") format("truetype"); /* Safari, Android, iOS */
-  }
+  font-family: "Korean Looks";
+  src: url("koreanlooks.ttf"); /* IE9 Compat Modes */
+  src: url("koreanlooks.ttf2") format("ttf2"),
+    url("koreanlooks.ttf") format("ttf2"),
+    url("koreanlooks.ttf") format("truetype"); /* Safari, Android, iOS */
+}
 
 @font-face {
   font-family: "Favorit";
-  src: url("http://db.onlinewebfonts.com/t/d73d37902ec72250867b578d3763ee38.eot"); /* IE9*/
+  src: url("http://db.onlinewebfonts.com/t/d73d37902ec72250867b578d3763ee38.eot");
   src: url("http://db.onlinewebfonts.com/t/d73d37902ec72250867b578d3763ee38.eot?#iefix")
       format("embedded-opentype"),
-    /* IE6-IE8 */
       url("http://db.onlinewebfonts.com/t/d73d37902ec72250867b578d3763ee38.woff2")
       format("woff2"),
-    /* chrome firefox */
       url("http://db.onlinewebfonts.com/t/d73d37902ec72250867b578d3763ee38.woff")
       format("woff"),
-    /* chrome firefox */
       url("http://db.onlinewebfonts.com/t/d73d37902ec72250867b578d3763ee38.ttf")
       format("truetype"),
-    /* chrome firefox opera Safari, Android, iOS 4.2+*/
       url("http://db.onlinewebfonts.com/t/d73d37902ec72250867b578d3763ee38.svg#Favorit")
-      format("svg"); /* iOS 4.1- */
+      format("svg");
 }
 
   body {
     font-family: 'Favorit', sans-serif;
     margin: 10px;
     line-height: 40px;
-    font-size: 30px;
+    font-size: 28px;
   }
   
   :root {
@@ -48,22 +44,31 @@
   }
   
   .recipe {
-    font-size: 20px;
+    /* font-size: 20px;
     font-family: 'EB Garamond', serif;
-    line-height: 28px;
+    line-height: 28px; */
     width: 60vw;
-    margin: 10px;
+    padding-bottom: 75px;
+    /* margin: 10px; */
   }
   
   .step {
     font-style: italic;
     font-weight: bold;
-    font-size: 25px;
+    scroll-margin-top: 50px;
+    /* font-size: 25px; */
   }
   
   .about {
-    /* line-height: 40px; */
-    margin: 0px 150px 3em 150px;
+    margin: 90px 150px 3em 150px;
+    text-align: justify;
+  }
+
+  .ps {
+    border: 1px solid #000;
+    box-shadow: 5px 5px #000;
+    padding: 10px;
+    margin: 90px 150px 2.5em 150px;
     text-align: justify;
   }
   
@@ -112,6 +117,7 @@
     text-decoration: none;
     /* font-family: 'Cutive Mono', monospace; */
     font-weight: bold;
+    font-size: 30px;
   }
   
   a:hover {
@@ -119,20 +125,29 @@
     cursor: url(//s3-us-west-2.amazonaws.com/s.cdpn.io/3174/cursor.png), auto;
   }
   
-  .kimchiMenu {
+  #kimchiMenu {
+    transition: top 0.5s;
     position: fixed;
     display: flex;
     justify-content: space-between;
     width: 98vw;
+    top: 10px;
+    transition: top 0.5s;
   }
   
-  .recipeMenu {
-    /* overflow: hidden; */
+  #recipeMenu {
     position: fixed;
     list-style: none;
     margin-top: 50px;
-    font-size: 23px;
     right: 10px;
+    top: 10px;
+    transition: top 1s;
+    font-size: 20px;
+  }
+
+  #midnight {
+    color: #ff00a6;
+    text-shadow: 5px 5px 5px #ff00a6;
   }
 
   .gradient {
@@ -180,11 +195,13 @@
   #closed-message {
     color: #CDCDCD;
     padding-top: 100px;
+    font-size: 25px;
   }
 
   #open-message {
     color: #CDCDCD;
     padding-top: 100px;
+    font-size: 25px;
   }
 
   @media only screen and (max-width: 700px) {

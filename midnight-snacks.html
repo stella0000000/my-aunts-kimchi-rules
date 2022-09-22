@@ -31,26 +31,18 @@
             <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/addons/p5.sound.min.js"></script>
             <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/addons/p5.dom.min.js" ></script>
             <script type="text/javascript" src="js/museum.js"></script>
+            <script type="text/javascript" src="js/asmr.js"></script>
         </head>
     
         <body style="background-color: #000;">
             <audio id="kimchiCrunch" preload="auto">
                 <source src="asmr.mp3"></source>
             </audio>
-    
-            <script type="text/javascript">
-                $(document).ready(function(){
-                    var audio = $("#kimchiCrunch")[0];
-                    $("#crunch a")
-                        .mouseenter(function() {
-                            audio.play();});
-                });
-            </script>
 
-            <div id="crunch" class="kimchiMenu">
+            <div class="crunch" id="kimchiMenu">
                 <a href="index.html" style="color: #ffe0f6">About</a><br>
                 <a href="recipe.html" style="color: #ffe0f6">♡ My Aunt's Kimchi Recipe ♡</a>
-                <a href="midnight-snacks.html" style="color: #ff00a6; font-style: italic; text-shadow: 5px 5px 5px #ff00a6;">Midnight Snacks</a>
+                <a href="midnight-snacks.html" id="midnight">Midnight Snacks</a>
             </div>
 
             <div id="closed-message">

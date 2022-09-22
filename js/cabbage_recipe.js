@@ -1,9 +1,8 @@
-var y;
-var changeDirection;
+let y, changeDirection;
 
-var timestamp = 0;
-var index = 0;
-var quotes = ['Hey, I\'m Cabbagette! You can call me Cabby.',
+let timestamp = 0;
+let index = 0;
+let quotes = ['Hey, I\'m Cabbagette! You can call me Cabby.',
               'Hover over dashed ingredients to see what they look like!',
               'Ask not what your cabbage can do for you, but what you can do for your cabbage.',
               'Radish dries quickly once its cut.',
@@ -32,6 +31,14 @@ function setup() {
     //angleMode(DEGREES);
 }
 
+function mouseWheel(event) {
+  print(event.delta);
+  //move the square according to the vertical scroll amount
+  pos += event.delta;
+  //uncomment to block page scrolling
+  //return false;
+}
+
 function draw() {
   background(255, 224, 246);
   
@@ -40,7 +47,8 @@ function draw() {
   scale(0.45);
   image(img, 250, y-25, img.width / 1.1, img.height / 1.1);
   translate(0,100);
-  fill(99, 150, 71);
+  fill(99, 150 - mouseY, 71 - mouseY);
+  // fill(99, 150, 71);
   square(200, y, 25);
   square(225, y, 25);
   square(250, y, 25);

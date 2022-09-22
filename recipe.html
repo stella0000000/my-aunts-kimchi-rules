@@ -12,6 +12,8 @@
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/addons/p5.sound.min.js"></script>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/addons/p5.dom.min.js" ></script>
         <script type="text/javascript" src="js/cabbage_recipe.js"></script>
+        <script type="text/javascript" src="js/nav.js"></script>
+        <script type="text/javascript" src="js/asmr.js"></script>
     </head>
 
     <body>
@@ -19,33 +21,24 @@
             <source src="asmr.mp3"></source>
         </audio>
 
-        <script type="text/javascript">
-            $(document).ready(function(){
-                var audio = $("#kimchiCrunch")[0];
-                $("#crunch a")
-                    .mouseenter(function() {
-                        audio.play();});
-            });
-        </script>
-
-        <div id="crunch" class="kimchiMenu">
+        <div class="crunch" id="kimchiMenu">
             <a href="index.html">About</a><br>
             <i><a href="recipe.html">♡ My Aunt's Kimchi Recipe ♡</a></i>
-            <a href="midnight-snacks.html" style="color: #ff00a6; text-shadow: 5px 5px 5px #ff00a6;">Midnight Snacks</a>
+            <a href="midnight-snacks.html" id="midnight">Midnight Snacks</a>
         </div>
 
-        <div id="crunch" class="recipeMenu">
-            <a href="recipe.html#groceries">00 Ingredients</a>. 
-            <a href="recipe.html#tools">01 Tools</a>. 
-            <a href="recipe.html#brine">02 Brine</a>. 
-            <a href="recipe.html#paste">03 Paste</a>. 
-            <a href="recipe.html#rub">04 Rub</a>. 
-            <a href="recipe.html#check">05 Check</a>. 
-            <a href="recipe.html#wait">06 Wait</a>.
+        <div id="recipeMenu">
+            <a href="recipe.html#groceries">Ingredients</a>. 
+            <a href="recipe.html#tools">Tools</a>. 
+            <a href="recipe.html#brine">Brine</a>. 
+            <a href="recipe.html#paste">Paste</a>. 
+            <a href="recipe.html#rub">Rub</a>. 
+            <a href="recipe.html#check">Check</a>. 
+            <a href="recipe.html#wait">Wait</a>.
         </div>
 
         <div id="crunch" class="recipe">
-            <br><br><br>
+            <br><br>
             <a name="groceries" class="step">Ingredients</a><br>
             2 medium-sized <span class="hover-title">napa cabbages</span>
                            <span class="hover-image"><img src="images/cabbage.png" /></span><br>
@@ -76,7 +69,6 @@
         </div>
 
         <div class="recipe">
-            <br><br>
             <a name="tools" class="step">Tools</a><br>
             Blender<br>
             2 large bowls<br>
@@ -88,7 +80,6 @@
          </div>
 
          <div class="recipe">
-            <br><br>
             <a name="brine" class="step">01 Brine cabbages (3 - 4h)</a><br>
             <div class="flex-container">
                 <div>Ingredients:<br>
@@ -100,17 +91,16 @@
                     2 large bowls</div>
             </div>
 
-            In a big bowl, dissolve salt in warm water. Remove dirty, old outer leaves of your cabbage - throw away. Remove a few fresh, green leaves - place aside for later. Cut the top half of each cabbage lengthwise, and tear the rest with your hands.<br><br>
-            Dip a cabbage thoroughly in saltwater. In another big bowl, grab about 2 teaspoons of salt with your hands and toss it on each cabbage leaf - from the middle with more towards the stem. Gently lay it in the bowl - face up - so the saltwater remains. Repeat for the rest of your cabbages.<br><br>
-            Pour leftover warm saltwater over the cabbages. Put the fresh leaves you set aside in the bowl, too. Find something heavy, like a clean unopened wine bottle, and place it on top to ensure all cabbages are submerged. Leave for about 3 - 4h. Check on them from time to time, you don’t want them to get too mushy.
+        In a big bowl, dissolve salt in warm water. Remove dirty, old outer leaves of your cabbage - throw away. Remove a few fresh, green leaves - place aside for later (step 3). Cut the top half of each cabbage lengthwise, and tear the rest with your hands.<br><br>
+        Dip a cabbage thoroughly in the saltwater. In another big bowl, grab about 2 teaspoons of salt with your hands and toss it on each cabbage leaf - from the middle with more towards the stem. Gently lay it in the bowl - face up - so the saltwater remains. Repeat for the rest of your cabbages.<br><br>
+        Pour leftover warm saltwater over the cabbages. Put the fresh leaves you set aside in the bowl, too. Find something heavy, like a clean unopened wine bottle, and place it on top to ensure all cabbages are submerged. Leave for about 3 - 4h. Check on them occasionally, you don’t want them to get too mushy.
         </div>
         <div class="recipe">
-            <br><br>
             <a name="paste" class="step">02 Make paste for filling</a><br>
             <div class="flex-container">
                 <div>Ingredients:<br>
                     1T chapssal powder<br>
-                    water<br>
+                    1c water<br>
                     ginger<br>
                     garlic<br>
                     pear<br>
@@ -128,11 +118,10 @@
             </div>
 
             Stir 1T chapssal powder and 1c water in a pot over medium heat. Stir continuously, so it doesn’t burn, til it becomes gluelike. Leave out to cool completely.<br><br>
-            While that’s cooling, blend: ginger, garlic, pear, fresh chili, 1/4 small radish. Add a little water if it’s too dry and won’t mix. Julienne the other 3/4 of your radish. In a ziploc, put your paste, and julienned radish, and chili flakes. Shake it up, and refrigerate.
+            While that’s cooling, blend: ginger, garlic, pear, fresh chili, 1/4 of a small radish. Add a little water if it’s too dry, and won’t blend well. Julienne the other 3/4 of your radish. In a ziploc, put your paste, and julienned radish, and chili flakes. Shake it up, and refrigerate.
          </div>
 
          <div class="recipe">
-            <br><br>
             <a name="rub" class="step">03 Rub paste on cabbages</a>
             <div class="flex-container">
                 <div>Ingredients:<br>
@@ -148,21 +137,24 @@
 
             <i>Check that your cabbages are brined properly. Snap a stem in half gently - if it makes a crunching sound, it’s not ready - leave it to soak longer. If it breaks sort of smoothly, but not TOO mushily, it’s ready.</i><br><br>
 
-            Wash each leaf individually under cold water - gently but well 3-4x. Place them face down in a colander for about 30m-1h just until the water is gone. Taste your blended rub in the ziploc - it should be on the saltier side. If your rub doesn’t look red enough, add more chili flakes. If you want it saltier, add more fish sauce or salt.<br><br>
+            Wash each leaf individually under cold water - gently but well 3 - 4x. Place them face down in a colander for about 0.5 - 1h just until the water is evaporated. Taste your rub blend in the ziploc - it should be on the saltier side. If your rub doesn’t look red enough, add more chili flakes. If you want it saltier, add more fish sauce or salt.<br><br>
             Rub the paste on each leaf - more towards the top of the cabbage since it will fall towards the stem as it’s fermenting. After you do this for your first cabbage, note if you think you’ll run out of the rub. If so, add more chili flakes, fish sauce, etc to make more. Repeat for the rest of your cabbages.<br><br>
-            Place each cabbage in your clean jar. If you’re using a flat container, place your cabbages in an alternating pattern face up, so your filling stays put. Take the fresh clean leaves you saved and cover the cabbage heads with them so your kimchi doesn’t turn out dry. No need to rub these with your paste.
+            Place each cabbage in your clean jar. If you’re using a flat container, place your cabbages in an alternating pattern face up, so your filling is retained. Take the fresh clean leaves you saved in step 1, and cover the cabbage heads with them, so your kimchi retains moisture. No need to rub these with your paste.
          </div>
 
          <div class="recipe">
-            <br><br>
             <a name="check" class="step">04 Final check</a><br>
-            Sometimes, you just suspect your kimchi isn’t salty enough - take the bowl with your paste in it and add about 1c water. Taste it. If this new mix isn’t salty or spicy enough for you, add more salt or chili flakes. Pour this over the kimchi in your jar. Cover the jar!            
+            Sometimes, you just suspect your kimchi isn’t salty enough - take the bowl with your paste in it, and add ~1c water. Taste it. If this new mix isn’t salty or spicy enough for your taste, you know what to do! Pour this over the kimchi in your jar. Cover the jar!            
          </div>
 
          <div class="recipe">
-            <br><br>
             <a name="wait" class="step">05 Wait 2 days</a><br>
-            Leave your batch out in room temperature for 2 days. It will start smelling. Refrigerate. Enjoy with your family and friends!
+            Leave your cute batch of homemade kimchi sitting in room temperature for 2 days. It will start smelling. Refrigerate. Invite everyone you love over, and enjoy!
+         </div>
+
+         <div class="recipe">
+            <a>* Tips for storing kimchi *</a><br>
+            You can place leftover lemons, oranges (any citrus), or coffee grounds in your fridge to minimize the smell. Maybe there are other alternatives, let me know if any work well for you <a href="mailto:stella.choi@hyperisland.se">here</a>! Visit the Midnight Snacks page for dishes to cook with your sour batches. Typically, if you are cooking with kimchi, you don't want to use a fresh batch.
          </div>
     </body>
 </html>
