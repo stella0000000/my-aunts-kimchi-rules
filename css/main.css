@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,700&display=swap');
 
 @font-face {
     font-family: "Korean Looks";
@@ -43,16 +44,21 @@
   }
   
   .flex-container > div {
-    margin: 0px 0px 0.5em 1em;
+    margin: 0px 50px 1em 0px;
   }
   
   .recipe {
-    margin: 0px 50px 2em 500px;
+    /* margin: 0px 50px 2em 500px; */
+    font-size: 20px;
+    font-family: 'EB Garamond', serif;
+    /* margin: 10px; */
+    line-height: 28px;
+    width: 65vw;
   }
   
   .step {
-    padding-top: 4.7em;
-    border-bottom: 1px solid #000;
+    font-style: italic;
+    font-weight: bold;
   }
   
   .about {
@@ -66,7 +72,7 @@
     pointer-events: auto;
     cursor: pointer;
     background-size: 50;
-    border: 1px solid #000;
+    border-bottom: 3px dashed rgb(51, 255, 0);
     padding: 2px;
     cursor: help;
   }
@@ -88,9 +94,7 @@
     transform: translate(-50%, -50%);
     z-index: -1;
     pointer-events: none;
-    flex-direction: column;
-    align-items: center;
-  
+    justify-content: center;
     width: 90vw;
     height: 90vh;
   }
@@ -123,10 +127,12 @@
   }
   
   .recipeMenu {
-    overflow: hidden;
+    /* overflow: hidden; */
     position: fixed;
     list-style: none;
-    margin-top: 100px;
+    margin-top: 50px;
+    font-size: 25px;
+    right: 10px;
   }
 
   .gradient {
