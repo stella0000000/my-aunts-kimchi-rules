@@ -12,14 +12,13 @@ canvas.style("left", "600");
 
 function draw() {
   background(0);
-
-  strokeWeight(4);
+  strokeWeight(3);
   stroke(random(mouseY), random(mouseX), mouseY);
   noFill();
   //HANGARI
   push();
-  translate(windowWidth-310,windowHeight/1.7);
-  scale(0.4);
+  translate(windowWidth - 200, 250);
+  scale(0.3);
   push();
   translate(160,165);
   rotate(-75);
@@ -44,7 +43,7 @@ function draw() {
 
   /* NAMAKSHIN*/
   push();
-  translate(windowWidth-500,windowHeight/1.5);
+  translate(windowWidth-225,500);
   scale(0.3);
   beginShape();
   vertex(27, 321);
@@ -206,8 +205,8 @@ function draw() {
 
   //HANBOK
   push();
-  translate(windowWidth-500,windowHeight/4);
-  scale(0.25);
+  translate(windowWidth - 200, 350);
+  scale(0.2);
   beginShape();
   vertex(352, 497);
   vertex(186, 496);
@@ -328,7 +327,7 @@ function draw() {
   /****HANOK****/
   // TOP
   push();
-  translate(windowWidth-300, windowHeight/4);
+  translate(windowWidth-225, 100);
   scale(0.3);
   line(100,100,225,100);
   x0 = 100;
