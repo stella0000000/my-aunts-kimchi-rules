@@ -8,7 +8,7 @@ let index = 0;
 let quotes = ['Hey, I\'m Cabbagette! You can call me Cabby.',
               'Hover over dashed ingredients to see what they look like!',
               'Ask not what your cabbage can do for you, but what you can do for your cabbage.',
-              'Radish dries quickly once its cut.',
+              "Radish dries quickly once its cut, let's try avoiding that!",
               'If you want it X-ier, add more... X!',
               'Lagom [ˈlɑ̂ːɡɔm] Swedish: not too much, not too little. Just the right amount.',
               'Will you do anything differently next time?',
@@ -35,38 +35,38 @@ function setup() {
 }
 
 function mouseWheel(e) {
-  if (r1 <= 240 && r1 >= 0) r1 += e.delta / 60;
-  if (r1 >= 240) {
-    r1 = 240;
-  } else if (r1 <= 0) {
-    r1 = 0;
-  }
-  if (g1 <= 1) g1 = 0;
-  if (b1 <= 1) b1 = 0;
-  g1 = 150 - r1;
-  b1 = 71 - r1;
+  // if (r1 <= 240 && r1 >= 0) r1 += e.delta / 60;
+  // if (r1 >= 240) {
+  //   r1 = 240;
+  // } else if (r1 <= 0) {
+  //   r1 = 0;
+  // }
+  // if (g1 <= 1) g1 = 0;
+  // if (b1 <= 1) b1 = 0;
+  // g1 = 150 - r1;
+  // b1 = 71 - r1;
 
-  if (r2 <= 200 && r2 >= 0) r2 += e.delta / 50;
-  if (r2 >= 200) {
-    r2 = 200;
-  } else if (r2 <= 0) {
-    r2 = 0;
-  }
-  if (g2 <= 1) g2 = 0;
-  if (b2 <= 1) b2 = 0;
-  g2 = 186 - r2;
-  b2 = 78 - r2;
+  // if (r2 <= 200 && r2 >= 0) r2 += e.delta / 50;
+  // if (r2 >= 200) {
+  //   r2 = 200;
+  // } else if (r2 <= 0) {
+  //   r2 = 0;
+  // }
+  // if (g2 <= 1) g2 = 0;
+  // if (b2 <= 1) b2 = 0;
+  // g2 = 186 - r2;
+  // b2 = 78 - r2;
 
-  if (r3 <= 170 && r3 >= 0) r3 += e.delta / 40;
-  if (r3 >= 170) {
-    r3 = 170;
-  } else if (r3 <= 0) {
-    r3 = 0;
-  }
-  if (g3 <= 1) g3 = 0;
-  if (b3 <= 1) b3 = 0;
-  g3 = 219 - r3;
-  b3 = 92 - r3;
+  // if (r3 <= 170 && r3 >= 0) r3 += e.delta / 40;
+  // if (r3 >= 170) {
+  //   r3 = 170;
+  // } else if (r3 <= 0) {
+  //   r3 = 0;
+  // }
+  // if (g3 <= 1) g3 = 0;
+  // if (b3 <= 1) b3 = 0;
+  // g3 = 219 - r3;
+  // b3 = 92 - r3;
 }
 
 function draw() {

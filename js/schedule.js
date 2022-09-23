@@ -10,7 +10,7 @@ function schedule() {
   $("#time").text(time);
 
   //check if opened, else closed
-  if ((today >= 21 && isWeekend == true) || (today <= 4 && isWeekend == true)) {
+  if ((today >= 20 && isWeekend == true) || (today <= 4 && isWeekend == true)) {
     //remove and add class to change the gradient of the bg
     $("body").removeClass("closed");
     $("body").addClass("open");

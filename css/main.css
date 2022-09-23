@@ -25,7 +25,7 @@
 }
 
   body {
-    font-family: 'Favorit', sans-serif;
+    font-family: 'Eb Garamond', serif;
     margin: 10px;
     line-height: 40px;
     font-size: 28px;
@@ -115,7 +115,7 @@
   a {
     color: #000000;
     text-decoration: none;
-    /* font-family: 'Cutive Mono', monospace; */
+    font-family: 'Cutive Mono', monospace;
     font-weight: bold;
     font-size: 30px;
   }

@@ -43,7 +43,7 @@ function draw() {
 
   /* NAMAKSHIN*/
   push();
-  translate(windowWidth-225,500);
+  translate(windowWidth-225,525);
   scale(0.3);
   beginShape();
   vertex(27, 321);
